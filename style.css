@@ -232,7 +232,11 @@ body {
   position: absolute;
   top: 50px;
   left: 0;
-  visibility: hidden;
+  /* visibility: hidden; */
+  /* display: none; */
+  opacity: 0;
+  scale: 0;
+  transition: all .3s linear;
   padding: 0.2rem 0.7rem;
   background-color: black;
   color: #fff;
@@ -240,7 +244,8 @@ body {
   border-radius: 6px;
 }
 .content .project__container__data .project-item__uses .img-tooltip:hover span, .content .project__container__data .project-item__uses .img-tooltip:active span, .content .project__container__data .project-item__uses .img-tooltip[clicked] span {
-  animation: forwards tool-tip 0.3s ease-in;
+  opacity: 1;
+  scale: 1;
 }
 .content .project .btn {
   animation: bouncing 1s infinite;
@@ -347,7 +352,7 @@ body {
   background-image: url(./assets/background.png);
   background-repeat: no-repeat;
   background-position: top center;
-background-size: cover;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
